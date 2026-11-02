@@ -70,4 +70,15 @@ footer{text-align:center;color:#888;font-size:12px;padding:28px 10px}
 </div>
 <script>
 let playing=false;function playTrack(name){document.getElementById('current').textContent=name;playing=true;document.getElementById('toggle').textContent='Ⅱ';document.getElementById('bar').style.width='35%'}function togglePlay(){playing=!playing;document.getElementById('toggle').textContent=playing?'Ⅱ':'▶'}function filterTracks(){const q=document.getElementById('search').value.trim().toLowerCase();document.querySelectorAll('#cards .card').forEach(c=>c.style.display=c.dataset.search.toLowerCase().includes(q)||c.innerText.toLowerCase().includes(q)?'':'none')}document.getElementById('search').addEventListener('input',filterTracks);
-</script></body></html>
+</script></script>
+
+<div style="text-align:center; padding:20px;">
+  <h2>🎧 پخش آهنگ DJ MIX</h2>
+  <p>dj_mix_remixed_louder</p>
+  <audio controls style="width:100%;">
+    <source src="dj_mix_remixed_louder.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+</body>
+</html></body></html>
