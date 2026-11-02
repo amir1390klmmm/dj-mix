@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DJ MIX | دانلود آهنگ</title>
+<style>
+:root{
+ --site-primary:#111111;
+ --site-on-primary:#ffffff;
+ --site-secondary:#e9e9e9;
+ --site-on-secondary:#111111;
+ --site-background:#f7f7f7;
+ --site-on-background:#151515;
+ --site-font-body:Tahoma,Arial,sans-serif;
+ --site-font-heading:Tahoma,Arial,sans-serif;
+ --site-heading-scale:1;
+ --site-spacing-scale:1;
+ --site-radius-scale:1;
+ --site-decoration-opacity:1;
+ color-scheme:light dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:light-dark(var(--site-background),#111);color:light-dark(var(--site-on-background),#f5f5f5);font-family:var(--site-font-body)}
+#app{min-height:100vh;width:100%;background-color:light-dark(var(--site-background),#111);border-radius:0}
+header{background:var(--site-primary);color:var(--site-on-primary);padding:22px 18px 18px;box-shadow:0 3px 12px #0002}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1050px;margin:auto}
+.brand{font:900 calc(30px * var(--site-heading-scale))/1.2 var(--site-font-heading);letter-spacing:1px}
+.brand small{display:block;font:12px var(--site-font-body);opacity:.7;letter-spacing:3px;margin-top:5px}
+.menu{border:1px solid #ffffff55;color:white;background:transparent;border-radius:12px;padding:10px 13px;font-size:21px}
+.search-wrap{max-width:1050px;margin:18px auto 0;display:flex;gap:8px}
+.search-wrap input{flex:1;min-width:0;border:0;border-radius:12px;padding:14px 16px;font-size:15px;background:#fff;color:#111;outline:none}
+.search-wrap button{border:0;border-radius:12px;background:#333;color:#fff;padding:0 18px;font-size:18px}
+main{max-width:1050px;margin:25px auto;padding:0 16px 110px}
+.hero{background:var(--site-secondary);color:var(--site-on-secondary);border-radius:calc(20px * var(--site-radius-scale));padding:24px;margin-bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.hero h1{font-size:calc(23px * var(--site-heading-scale));margin:0 0 8px}.hero p{margin:0;line-height:1.9;color:#555;font-size:14px}
+.hero .disc{width:82px;height:82px;flex:none;border:8px solid #111;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#fff 0 9%,#111 10% 12%,#ddd 13% 100%);color:#111;font-size:26px}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:28px 2px 14px}.section-head h2{font-size:19px;margin:0}.section-head span{font-size:12px;color:#777}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.card{background:light-dark(#fff,#202020);border:1px solid light-dark(#e5e5e5,#333);border-radius:calc(17px * var(--site-radius-scale));padding:10px;min-width:0;box-shadow:0 2px 8px #00000008}
+.cover{height:125px;border-radius:13px;background:linear-gradient(145deg,#222,#777);color:#fff;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.cover:before{content:"";position:absolute;width:150px;height:150px;border:1px solid #ffffff55;border-radius:50%;box-shadow:0 0 0 12px #ffffff12,0 0 0 26px #ffffff0c}
+.cover b{font-size:30px;z-index:1}.cover em{position:absolute;bottom:9px;right:10px;font-size:10px;font-style:normal;z-index:1}
+.card h3{font-size:15px;margin:10px 2px 5px}.meta{font-size:12px;color:#777;margin:0 2px 10px}
+.actions{display:flex;gap:7px}.actions button{flex:1;border:0;border-radius:9px;padding:9px 5px;font-size:12px;cursor:pointer}.play{background:#111;color:#fff}.download{background:#e8e8e8;color:#111}
+.list{background:light-dark(#fff,#202020);border:1px solid light-dark(#e5e5e5,#333);border-radius:16px;overflow:hidden}
+.track{display:flex;align-items:center;gap:12px;padding:13px 15px;border-bottom:1px solid light-dark(#eee,#333)}.track:last-child{border:0}.track .num{color:#888;width:20px}.track .info{flex:1;min-width:0}.track strong{display:block;font-size:14px}.track small{color:#888}.track button{border:0;background:#111;color:white;border-radius:9px;padding:8px 12px}
+.player{position:fixed;bottom:0;left:0;right:0;background:#111;color:white;padding:12px 16px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -4px 18px #0002;z-index:4}.player-inner{max-width:1050px;margin:auto;display:flex;align-items:center;gap:13px}.now{flex:1;min-width:0}.now strong{display:block;font-size:13px}.now small{color:#aaa}.control{background:white;color:#111;border:0;border-radius:50%;width:40px;height:40px;font-size:17px}.progress{height:3px;background:#555;margin-top:9px;border-radius:5px;overflow:hidden}.progress i{display:block;height:100%;width:25%;background:#fff}
+footer{text-align:center;color:#888;font-size:12px;padding:28px 10px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.cover{height:155px}}
+@media(max-width:390px){.grid{gap:8px}.card{padding:7px}.cover{height:100px}.card h3{font-size:13px}.hero{padding:18px}.hero .disc{width:65px;height:65px}}
+</style></head>
+<body><div id="app">
+<header><div class="top"><div class="brand">DJ MIX<small>MUSIC • REMIX • PLAY</small></div><button class="menu" aria-label="منو">☰</button></div><div class="search-wrap"><input id="search" placeholder="جست‌وجوی آهنگ یا خواننده..." aria-label="جست‌وجوی آهنگ"><button onclick="filterTracks()">⌕</button></div></header>
+<main>
+<section class="hero"><div><h1>دنیای آهنگ با DJ MIX</h1><p>جدیدترین آهنگ‌ها، ریمیکس‌ها و میکس‌های ویژه<br>همه‌چیز برای یک تجربه‌ی موسیقی متفاوت.</p></div><div class="disc">♫</div></section>
+<div class="section-head"><h2>🎧 آهنگ‌های ویژه</h2><span>منتخب DJ MIX</span></div>
+<section class="grid" id="cards">
+<article class="card" data-search="ریمیکس شبانه dj mix"><div class="cover"><b>♫</b><em>DJ MIX • REMIX</em></div><h3>ریمیکس شبانه</h3><p class="meta">میکس ویژه • ۱۴۰۵</p><div class="actions"><button class="play" onclick="playTrack('ریمیکس شبانه')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+<article class="card" data-search="آهنگ جاده خاطره"><div class="cover"><b>◖♫◗</b><em>DJ MIX</em></div><h3>جاده خاطره</h3><p class="meta">آهنگ • فارسی</p><div class="actions"><button class="play" onclick="playTrack('جاده خاطره')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+<article class="card" data-search="میکس شاد پارتی"><div class="cover"><b>♬</b><em>PARTY MIX</em></div><h3>میکس شاد پارتی</h3><p class="meta">میکس • شاد</p><div class="actions"><button class="play" onclick="playTrack('میکس شاد پارتی')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+<article class="card" data-search="ریمیکس عاشقانه"><div class="cover"><b>♥</b><em>LOVE MIX</em></div><h3>ریمیکس عاشقانه</h3><p class="meta">ریمیکس • احساسی</p><div class="actions"><button class="play" onclick="playTrack('ریمیکس عاشقانه')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+<article class="card" data-search="موزیک بی کلام"><div class="cover"><b>♫</b><em>INSTRUMENTAL</em></div><h3>موزیک بی‌کلام</h3><p class="meta">آرامش • بی‌کلام</p><div class="actions"><button class="play" onclick="playTrack('موزیک بی‌کلام')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+<article class="card" data-search="میکس ماشین"><div class="cover"><b>◉</b><em>CAR MIX</em></div><h3>میکس مخصوص ماشین</h3><p class="meta">بیس‌دار • پرانرژی</p><div class="actions"><button class="play" onclick="playTrack('میکس مخصوص ماشین')">▶ پخش</button><button class="download" onclick="alert('برای دانلود، فایل آهنگ باید توسط مدیر سایت بارگذاری شود.')">↓ دانلود</button></div></article>
+</section>
+<div class="section-head"><h2>آخرین آهنگ‌ها</h2><span>به‌زودی به‌روزرسانی می‌شود</span></div>
+<section class="list"><div class="track"><span class="num">01</span><div class="info"><strong>ریمیکس ویژه DJ MIX</strong><small>ریمیکس • جدید</small></div><button onclick="playTrack('ریمیکس ویژه DJ MIX')">▶</button></div><div class="track"><span class="num">02</span><div class="info"><strong>میکس شبانه</strong><small>میکس • منتخب</small></div><button onclick="playTrack('میکس شبانه')">▶</button></div><div class="track"><span class="num">03</span><div class="info"><strong>آهنگ‌های خاطره‌انگیز</strong><small>مجموعه • فارسی</small></div><button onclick="playTrack('آهنگ‌های خاطره‌انگیز')">▶</button></div></section>
+<footer>© 2026 DJ MIX — تمام حقوق برای صاحب سایت محفوظ است.</footer>
+</main>
+<div class="player"><div class="player-inner"><button class="control" onclick="togglePlay()" id="toggle">▶</button><div class="now"><strong id="current">هنوز آهنگی انتخاب نشده</strong><small>DJ MIX Player</small><div class="progress"><i id="bar"></i></div></div><span>♫</span></div></div>
+</div>
+<script>
+let playing=false;function playTrack(name){document.getElementById('current').textContent=name;playing=true;document.getElementById('toggle').textContent='Ⅱ';document.getElementById('bar').style.width='35%'}function togglePlay(){playing=!playing;document.getElementById('toggle').textContent=playing?'Ⅱ':'▶'}function filterTracks(){const q=document.getElementById('search').value.trim().toLowerCase();document.querySelectorAll('#cards .card').forEach(c=>c.style.display=c.dataset.search.toLowerCase().includes(q)||c.innerText.toLowerCase().includes(q)?'':'none')}document.getElementById('search').addEventListener('input',filterTracks);
+</script></body></html>
